@@ -8,17 +8,19 @@ public class Tag {
 	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 	
-	private String tid;
+	private Integer tid;
 	
 	private String tname;
 	
 	private Integer tcount;
 
-	public String getTid() {
+	
+
+	public Integer getTid() {
 		return tid;
 	}
 
-	public void setTid(String tid) {
+	public void setTid(Integer tid) {
 		this.tid = tid;
 	}
 
@@ -42,6 +44,5 @@ public class Tag {
 	public String toString() {
 		return "Tag [tid=" + tid + ", tname=" + tname + ", tcount=" + tcount + "]";
 	}
-	
-	
+
 }

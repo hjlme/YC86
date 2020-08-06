@@ -1,19 +1,20 @@
 package com.yc.favorites.bean;
 
-public class TagFavorites {
+public class TagFavorite {
 
 	@SuppressWarnings("unused")
 	private static final long serialVersionUID = 1L;
 	
-	private String tid;
+	private Integer tid;
 	
 	private Integer fid;
 
-	public String getTid() {
+	
+	public Integer getTid() {
 		return tid;
 	}
 
-	public void setTid(String tid) {
+	public void setTid(Integer tid) {
 		this.tid = tid;
 	}
 
