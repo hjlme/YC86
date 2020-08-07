@@ -23,6 +23,8 @@
 	</environments>
 	
 	<mappers>
-		<package name="com.yc.favorites.dao"/>
+		<mapper resource="com/yc/favorites/dao/FavoriteMapper.xml"/>
+		<mapper class="com.yc.favorites.dao.TagFavoriteMapper"/>
+		<mapper class="com.yc.favorites.dao.TagMapper"/>
 	</mappers>
 </configuration>

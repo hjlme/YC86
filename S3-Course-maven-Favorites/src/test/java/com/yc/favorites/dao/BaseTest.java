@@ -48,4 +48,13 @@ public class BaseTest {
 		f.setFtags("游戏,生活，资讯");
 		fb.addFavorite(f);
 	}
+	
+	@Test
+	public void test4() {
+		SqlSession session = MyBatisHelper.openSession();
+		FavoriteMapper fm = session.getMapper(FavoriteMapper.class);
+		fm.selectBytid(null);
+		fm.selectBytid(1);
+		fm.selectBytid(0);
+	}
 }
