@@ -57,4 +57,26 @@ public class BaseTest {
 		fm.selectBytid(1);
 		fm.selectBytid(0);
 	}
+	
+	@Test
+	public void test5() {
+		FavoriteBiz fb = new FavoriteBiz();
+		Favorite f = new Favorite();
+		f.setFlabel("bilibli");
+		f.setFdesc("你喜欢的视频都在b站");
+		f.setFurl("bilibili.com");
+		f.setFtags("");
+		fb.addFavorite(f);
+	}
+	
+	@Test
+	public void test6() {
+		FavoriteBiz fb = new FavoriteBiz();
+		Favorite f = new Favorite();
+		f.setFlabel("虎牙");
+		f.setFdesc("你喜欢看的电视剧都在虎牙");
+		f.setFurl("huya.com");
+		f.setFtags("直播，游戏，电视剧，电影");
+		fb.addFavorite(f);
+	}
 }
