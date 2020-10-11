@@ -1,0 +1,9 @@
+server:
+  port: 9999
+spring:
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+logging:
+  level:
+    com.yc.springcloud81: debug
